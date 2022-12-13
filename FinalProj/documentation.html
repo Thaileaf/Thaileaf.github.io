@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Proj Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+
+    // To check the scroll position on page load
+    reveal();
+</script>
+<body>
+
+<div class="reveal">
+
+    <h1>The beginning of everything</h1>
+    <p>Inspirations</p>
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/6.jpg">
+    <img style="max-width:35vw;
+    height:auto;" src="screenshots/5.png">
+    <img style="max-width:40vw;
+    height:auto;" src="screenshots/4.png">
+</div>
+
+<div class="reveal">
+
+    <h1>The first step</h1>
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/3.png">
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/1.png">
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/8.png">
+    <video width="600" height="600" controls>
+        <source src="screenshots/1.mp4">
+        Your browser does not support videos
+    </video>
+</div>
+
+<div class="reveal">
+
+
+    <h1>Slowly coming together(more features)</h1>
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/2.png">
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/6.png">
+
+    <video width="600" height="600" controls>
+        <source src="screenshots/2.mp4">
+        Your browser does not support videos
+    </video>
+</div>
+
+<div class="reveal">
+    <h1>Finished product</h1>
+    <img style="max-width:50vw;
+    height:auto;" src="screenshots/9.jpg">
+
+    <video width="600" height="600" controls>
+        <source src="screenshots/3.mp4">
+        Your browser does not support videos
+    </video>
+</div>
+
+<div class="reveal">
+    <h1>Feedback</h1>
+    <p>Need to make selected image go on top</p>
+    <p>need to see the whole picture of the cats in the selection</p>
+    <p>Randomize the cat picture position</p>
+</div>
+
+<h2>References:</h2>
+<a href="https://p5js.org/reference/#/p5/image">https://p5js.org/reference/#/p5/image</a><br/>
+<a href="https://p5js.org/examples/input-mouse-functions.html">https://p5js.org/examples/input-mouse-functions.html</a><br/>
+<a href="https://p5js.org/reference/#/p5/mouseDragged">https://p5js.org/reference/#/p5/mouseDragged</a><br/>
+<a href="https://www.w3schools.com/jsref/jsref_push.asp">https://www.w3schools.com/jsref/jsref_push.asp</a><br/>
+<a href="https://github.com/processing/p5.js/wiki/Positioning-your-canvas">https://github.com/processing/p5.js/wiki/Positioning-your-canvas</a><br/>
+<a href="https://p5js.org/reference/#/p5/random">https://p5js.org/reference/#/p5/random</a><br/>
+<a href="https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp">https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp</a><br/>
+<a href="https://stackoverflow.com/questions/16794523/image-enlarge-shrink-animation-in-js">https://stackoverflow.com/questions/16794523/image-enlarge-shrink-animation-in-js</a><br/>
+<a href="https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element">https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element</a><br/>
+<a href="https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row">https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row</a>
+<a href="https://stackoverflow.com/questions/5303899/change-onclick-action-with-a-javascript-function">https://stackoverflow.com/questions/5303899/change-onclick-action-with-a-javascript-function</a><br/>
+<a href="https://stackoverflow.com/questions/13637133/how-to-set-onclick-with-javascript">https://stackoverflow.com/questions/13637133/how-to-set-onclick-with-javascript</a><br/>
+<a href="https://flexiple.com/javascript/javascript-appendchild/">https://flexiple.com/javascript/javascript-appendchild/</a><br/>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/bottom">https://developer.mozilla.org/en-US/docs/Web/CSS/bottom</a><br/>
+<a href="https://github.com/processing/p5.js/wiki/Positioning-your-canvas">https://github.com/processing/p5.js/wiki/Positioning-your-canvas</a><br/>
+<a href="https://www.makeuseof.com/tag/8-purrfect-cat-websites/">https://www.makeuseof.com/tag/8-purrfect-cat-websites/</a><br/>
+<a href="https://p5js.org/reference/#/p5/save">https://p5js.org/reference/#/p5/save</a><br/>
+<a href="https://p5js.org/reference/#/p5/saveCanvas">https://p5js.org/reference/#/p5/saveCanvas</a><br/>
+<a href="https://stackoverflow.com/questions/58694222/animated-gif-icon-for-button-html">https://stackoverflow.com/questions/58694222/animated-gif-icon-for-button-html</a><br/>
+<a href="https://p5js.org/reference/#/p5/preload">https://p5js.org/reference/#/p5/preload</a><br/>
+<a href="https://p5js.org/reference/#/p5.TypedDict">https://p5js.org/reference/#/p5.TypedDict</a><br/>
+<a href="https://github.com/IDMNYU/webDev_C_Fall2022/wiki/Week-14-and-15">https://github.com/IDMNYU/webDev_C_Fall2022/wiki/Week-14-and-15</a><br/>
+<a href="https://p5js.org/reference/#/p5/resizeCanvas">https://p5js.org/reference/#/p5/resizeCanvas</a><br/>
+<a href="https://www.google.com/search?q=meme+cat+pictures&tbm=isch&ved=2ahUKEwjSvcDKyvX7AhWIL1kFHQQ-D8EQ2-cCegQIABAA&oq=meme+cat+pictures&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgYIABAHEB4yBggAEAUQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjoHCAAQsQMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6BAgAEEM6CAgAEAUQBxAeOggIABAIEAcQHlDBA1jOBmDICGgAcAB4AIABRIgBqAKSAQE1mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=GeiXY5LNIojf5NoPhPy8iAw&bih=1007&biw=1920&rlz=1C1ONGR_enUS930US930">https://www.google.com/search?q=meme+cat+pictures</a><br/>
+
+
+</body>
+</html>

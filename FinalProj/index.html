@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2:ital,wght@0,100;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Final Proj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <script src="Collage.js" defer></script>
+
+</head>
+<body style="position:absolute">
+
+<!--https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD-->
+<!--Perlin Noise Coding train Crash Course-->
+<div id="sketch">
+    <main id="sketch-holder">
+
+    </main>
+</div>
+
+
+
+<div class="ui">
+    <p style="text-align: center">Lots of cats</p>
+    <div class="images" id="images">
+
+
+    </div>
+
+
+
+    <div class="savediv">
+        <button class="save" onClick="saveCanvas('Cats', 'jpg')">
+        </button>
+        <p style="text-align: center">Save!</p>
+    </div>
+
+</div>
+
+
+</body>
+<script>
+
+    window.onLoad = load();
+
+    function load() {
+        let parent = document.getElementById("images");
+        for(let i = 1; i < 19; i++) {
+            let child = document.createElement('button');
+
+            child.style.setProperty("background-size", "contain");
+            child.style.setProperty("background", "center url(\"./assets/"+i+".jpg\") no-repeat");
+            child.style.setProperty("flex", "1 0 21%")
+            child.classList.add("image");
+            child.addEventListener('click', function(e) {
+                addImg(i);
+            })
+            parent.appendChild(child);
+        }
+    }
+</script>
+</html>

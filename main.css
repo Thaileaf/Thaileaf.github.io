@@ -96,7 +96,7 @@ head {
 .pole {
     position: absolute;
     transform: scale(0.9);
-    left:5vw;
+    left:150px;
     bottom:-100px;
     z-index: 1;
 }

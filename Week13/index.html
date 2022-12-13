@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="main.css"/>
+</head>
+<body>
+  <div style="position:absolute;height:100vh; width: 50vw; padding: 25px;">
+    <h1>“Until writing was invented, man lived in acoustic space: boundless, directionless, horizonless, in the dark of the mind, in the world of emotion, by primordial intuition, by terror.
+      Speech is a social chart of this bog.”</h1>
+    <button id="nextbut">
+      <img style="height: 100%; width: 100%;" src="arrow.svg"/>
+    </button>
+  </div>
+  <div style="position: absolute;height:100vh; width: 50vw; left: 50vw; ">
+    <button onclick=darkScene() style="border:none; background-color:transparent; height:30%; width:30%; display:block; margin: auto; transform: rotate(180deg)">
+      <img style="height:100%; width:100%;" src="1547155443.svg"/>
+    </button>
+
+  </div>
+
+
+</body>
+
+<script defer>
+  // window.onload = darkScene();
+  function darkScene() {
+    document.body.style.setProperty("animation","0s ease-out 1 forwards dark");
+  }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms)); // Why does this only run once?
+  }
+</script>
+</html>

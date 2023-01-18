@@ -21,7 +21,7 @@ var projects = [
         title:"NYU Augmented Library Mobile App",
         description:"A mobile application designed at NYU with the aim of providing NYU Dibner library users ease of access to all services through the use of AR technology.",
         src:"./src/vip.png",
-        link:"https://engineering.nyu.edu/research-innovation/student-research/vertically-integrated-projects/vip-teams/augmented-library",
+        link:"https://github.com/Thaileaf/NYU-Library-Frontend",
         tags:["mysql", "css", "javascript", "react", "react native", "python", "django"]
     },{
         title:"E20 Assembler",

@@ -1,5 +1,11 @@
 var projects = [
     {
+        title:"Airline Ticket Booking Service",
+        description:"An online flight booking service that facilitates the purchase of airline tickets",
+        src:"./src/booking.jpg",
+        link:"https://github.com/Thaileaf/DeytabaseAirlines",
+        tags:["css", "html", "git", "javascript", "mysql"]
+    },{
         title:"Web Development Playground",
         description:"Series of web pages developed in the pursuit of html/css/javascript knowledge.",
         src:"./src/webdev.gif",

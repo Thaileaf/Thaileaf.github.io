@@ -1,5 +1,12 @@
 var projects = [
     {
+        title:"Foodle Game",
+        description:"A online guessing game designed to teach people about food nutrition",
+        src:"./src/foodle.png",
+        link:"https://hacknyu23-foodle.github.io/reverse",
+        tags:["css", "html", "git", "javascript", "mysql"]
+    },
+    {
         title:"Airline Ticket Booking Service",
         description:"An online flight booking service that facilitates the purchase of airline tickets",
         src:"./src/booking.jpg",

@@ -1,9 +1,9 @@
 var projects = [
     {
-        title:"Foodle Game",
-        description:"A online guessing game designed to teach people about food nutrition",
-        src:"./src/foodle.png",
-        link:"https://hacknyu23-foodle.github.io/reverse",
+        title:"Google Quick Draw Clone",
+        description:"An application that uses custom built models, such as SVMs and Neural Networks, to guess user drawings.",
+        src:"./src/quickdraw.png",
+        link:"https://github.com/BerryLiu2002/MLProject",
         tags:["css", "html", "git", "javascript", "mysql"]
     },
     {
